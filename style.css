@@ -96,7 +96,7 @@ body {
 }
 
 .header_text:hover {
-    color:#7a66cc;
+  color: #7a66cc;
 }
 
 .news {
@@ -396,6 +396,7 @@ body {
   grid-template-columns: repeat(4, 255px);
   gap: 30px;
   margin-bottom: 180px;
+  position: relative;
 }
 
 .gallery_item {
@@ -411,7 +412,34 @@ body {
 .photo-dj {
   grid-column-start: 2;
   grid-column-end: 4;
+  position: relative;
 }
+
+/* .photo-dj::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 1000px;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.photo-dj:hover::before {
+  width: 100%;
+  background: rgba(122, 102, 204, 1);
+  content: "BUY";
+  color: white;
+  font-size: 16px;
+  padding-top: 16px;
+  z-index: 2;
+} */
 
 .car-photo-1 {
   grid-area: 1/2/2/3;
@@ -498,17 +526,30 @@ body {
 }
 
 .event_ticket::before {
-  display: none;
-  content: "BUY";
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 100%;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .event_ticket:hover::before {
-  display: block;
+  width: 100%;
+  background: rgba(122, 102, 204, 1);
+  content: "BUY";
+  color: white;
+  font-size: 16px;
+  padding-top: 16px;
+  opacity: 1;
+  z-index: 2;
 }
 
 .switcher {
@@ -573,6 +614,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .footer_copyright {
@@ -584,4 +626,10 @@ body {
   color: #ffffff;
   opacity: 0.5;
   margin-bottom: 40px;
+}
+
+.links_logo:hover {
+  box-shadow: 0 0 0px 3px rgba(240, 240, 240, 0.3);
+  border-radius: 50%;
+  transition: all 0.2s linear;
 }
