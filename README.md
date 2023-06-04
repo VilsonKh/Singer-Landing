@@ -1,7 +1,7 @@
 # 🎤 Singer Landing
 The Singer Landing is a website designed to showcase the immense talent, artistry, and musical journey of a renowned singer. 
 
-The **Singer's Website** can be accessed via [this link]().
+The **Singer's Website** can be accessed via [this link](https://vilsonkh.github.io/singer-landing/).
 
 ## Project Functionality
 
