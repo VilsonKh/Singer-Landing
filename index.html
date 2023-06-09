@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bright Lights</title>
-		<link href=" https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css " rel="stylesheet">
+		<link href=" https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css " rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="reset.css" />
 
@@ -18,50 +18,52 @@
 		<div class="first-screen">
 			<header class="header">
 				<div class="header__top">
-					<img class="header__logo logo" src="img/logo.png" alt="bright_lights" />
-					<div class="header__nav">
+					<img class="header__logo" src="img/logo.png" alt="bright_lights" />
+					<ul class="header__list">
 						<li class="header__item"><a href="#">About</a></li>
 						<li class="header__item"><a href="#">News</a></li>
 						<li class="header__item"><a href="#">Music</a></li>
 						<li class="header__item"><a href="#">Media</a></li>
 						<li class="header__item"><a href="#">Tours</a></li>
 						<li class="header__item"><a href="#">Contacts</a></li>
-					</div>
+					</ul>
 				</div>
-				<div class="header__anonce">
-					<h1 class="anonce__title">New Single</h1>
-					<p class="anonce__text">War For Love</p>
+				<div class="header__announcement">
+					<h1 class="announcement__title">New Single</h1>
+					<p class="announcement__text">War For Love</p>
 				</div>
-				<video class="header__video" autoplay muted disablePictureInPicture controlsList="nodownload" id="myVideo">
+				<video class="header__video" playsinline loop autoplay muted disablePictureInPicture controlsList="nodownload" id="myVideo">
 					<source src="video/0604.webm" type="video/mp4" />
 				</video>
 			</header>
 		</div>
 		<main class="main">
 			<section class="news">
-				<a href="#" class="news__item work">
+				<a href="#" class="news__item">
 					<img class="news__image" src="img/news_1.webp" alt="work" />
-					<p class="news__text">Working on my upcoming full-lenth album that`s releasing later this year.</p>
+					<div class="news__box">
+						<p class="news__text">Working on my upcoming full-lenth album that`s releasing later this year.</p>
+					</div>
 				</a>
-				<a href="#" class="news__item halloween">
+				<a href="#" class="news__item">
 					<img class="news__image" src="img/news_2.webp" alt="halloween" />
-					<p class="news__text">
-						Halloween vibes.<br />
-						Listen my new track!
-					</p>
+					<div class="news__box">
+						<p class="news__text">Halloween vibes.</p>
+						<p class="news__text">Listen my new track!</p>
+					</div>
 				</a>
-				<a href="#" class="news__item stream">
-					<img class="news__image" src="img/news_3.webp" alt="" />
-					<p class="news__text">
-						WarForLove is OUT NOW!! <br />
-						Stream it here!
-					</p>
+				<a href="#" class="news__item">
+					<img class="news__image" src="img/news_3.webp" alt="news" />
+					<div class="news__box">
+						<p class="news__text">WarForLove is OUT NOW!!</p>
+						<p class="news__text">Stream it here!</p>
+					</div>
 				</a>
 			</section>
 			<section class="about">
 				<div class="about__main-info">
 					<div class="about__title">
-						<img class="title__waves" src="img/about_us-waves.png" alt="" />
+						<img class="title__waves" src="img/about_us-waves.png" alt="audio waves" />
 						<p class="title__text">Bright Lights</p>
 					</div>
 					<p class="about__text">
@@ -71,50 +73,48 @@
 						Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in
 						2020.
 					</p>
-					<div class="about__info">
-						<ul class="about__list">
-							<li class="about__item">
-								<p class="about__stats">Based in: Los Angeles</p>
-							</li>
-							<li class="about__item">
-								<p class="about__stats">Founded in 2011</p>
-							</li>
-							<li class="about__item">
-								<p class="about__stats">Genre: #DancePop</p>
-							</li>
-							<li class="about__item">
-								<p class="about__stats">Label: 333 Recordings</p>
-							</li>
-						</ul>
-					</div>
+					<ul class="about__list">
+						<li class="about__item">
+							<p class="about__stats">Based in: Los Angeles</p>
+						</li>
+						<li class="about__item">
+							<p class="about__stats">Founded in 2011</p>
+						</li>
+						<li class="about__item">
+							<p class="about__stats">Genre: #DancePop</p>
+						</li>
+						<li class="about__item">
+							<p class="about__stats">Label: 333 Recordings</p>
+						</li>
+					</ul>
 				</div>
 				<div class="about__images">
-					<img class="about__main-photo" src="img/about_us-photo.webp" alt="" />
-					<img class="about__background" src="img/about-us_background.webp" alt="" />
+					<img class="about__main-photo" src="img/about_us-photo.webp" alt="photo" />
+					<img class="about__background" src="img/about-us_background.webp" alt="background photo" />
 				</div>
 			</section>
 			<section class="review">
 				<div class="review__text">
-					<img class="review__quote-img" src="img/“.png" alt="" />
+					<img class="review__quote-img" src="img/quete_mark.png" alt="quete mark" />
 					<p class="review__quote">
 						“In an age where mainstream music is designed to be as easily consumed as possible, listening to Bright Lights is refreshing, to say the least. Her sound is perfect for radio
 						but complex enough to separate her from other pop newcomers.”
 					</p>
-					<div class="review__line"></div>
-					<a class="review__link accent" href="PopULove.net">PopULove.net</a>
+
+					<a class="review__link accent" href="https://populove.net">PopULove.net</a>
 				</div>
-				<img class="review__photo" src="img/about_us-photo-2.webp" alt="" />
+				<img class="review__photo" src="img/about_us-photo-2.webp" alt="photo" />
 			</section>
 			<section class="tracks">
-				<img class="tracks__img" src="img/trackes_round-photo.webp" alt="dj_in_round" />
+				<img class="tracks__img" src="img/trackes_round-photo.webp" alt="photo in round" />
 				<div class="tracks__info">
 					<div class="list__title">
-						<img class="title__waves" src="img/about_us-waves.png" alt="" />
+						<img class="title__waves" src="img/about_us-waves.png" alt="audio waves" />
 						<h3 class="title__text">Last tracks</h3>
 					</div>
 					<audio class="list__player" controls muted src="audio/audio.mp3"></audio>
 					<ul class="list__tracks">
-						<li class="list__tem">
+						<li class="list__item">
 							<span class="item__number">01</span>
 							<p class="item__song">3LAU, Bright Lights — How You Love Me</p>
 						</li>
@@ -142,29 +142,38 @@
 					<div class="tracks__links">
 						<p class="links__text">Follow me:</p>
 						<div class="links__resources">
-							<a class="resources__spotify resource" href="https://www.spotify.com">
-								<img class="spotify__logo resource-logo" src="img/tracks_spotify-logo.png" alt="spotify" />
-								<p class="spotify__text resource__text">Spotify</p>
+							<a class="resource" href="https://www.spotify.com">
+								<svg class="resource__platform-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.66 0 12 0ZM17.521 17.34C17.281 17.699 16.861 17.82 16.5 17.58C13.68 15.84 10.14 15.479 5.939 16.439C5.521 16.561 5.16 16.26 5.04 15.9C4.92 15.479 5.22 15.12 5.58 15C10.14 13.979 14.1 14.4 17.22 16.32C17.64 16.5 17.699 16.979 17.521 17.34ZM18.961 14.04C18.66 14.46 18.12 14.64 17.699 14.34C14.46 12.36 9.54 11.76 5.76 12.96C5.281 13.08 4.74 12.84 4.62 12.36C4.5 11.88 4.74 11.339 5.22 11.219C9.6 9.9 15 10.561 18.72 12.84C19.081 13.021 19.26 13.62 18.961 14.04ZM19.081 10.68C15.24 8.4 8.82 8.16 5.16 9.301C4.56 9.48 3.96 9.12 3.78 8.58C3.6 7.979 3.96 7.38 4.5 7.199C8.76 5.939 15.78 6.179 20.221 8.82C20.76 9.12 20.94 9.84 20.64 10.38C20.341 10.801 19.62 10.979 19.081 10.68Z"
+										fill="white"
+									/>
+								</svg>
+								<p class="resource__text">Spotify</p>
 							</a>
-							<a class="resources__itunes resource" href="https://www.apple.com/itunes/">
-								<img class="itunes__logo resource-logo" src="img/tracks_itunes-logo.png" alt="itunes" />
-								<p class="itunes__text resource__text">iTunes</p>
+							<a class="resource" href="https://www.apple.com/itunes/">
+								<svg class="resource__platform-icon" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M5.07799 23.55C4.60499 23.234 4.18499 22.847 3.83399 22.4C3.45099 21.937 3.09599 21.45 2.76999 20.946C2.00399 19.826 1.40499 18.601 0.989994 17.31C0.489994 15.808 0.246994 14.37 0.246994 12.963C0.246994 11.393 0.586994 10.023 1.24899 8.87302C1.73899 7.97302 2.46899 7.22002 3.34899 6.69102C4.19899 6.16102 5.18899 5.87102 6.18899 5.85102C6.53899 5.85102 6.91899 5.90102 7.31899 6.00102C7.60899 6.08102 7.95899 6.21102 8.38899 6.37102C8.93899 6.58102 9.23899 6.71102 9.33899 6.74102C9.65899 6.86102 9.92899 6.91102 10.139 6.91102C10.299 6.91102 10.529 6.86102 10.784 6.78102C10.929 6.73102 11.204 6.64102 11.594 6.47102C11.98 6.33102 12.286 6.21102 12.529 6.12102C12.899 6.01102 13.257 5.91102 13.579 5.86102C13.969 5.80102 14.356 5.78102 14.727 5.81102C15.437 5.86102 16.087 6.01102 16.667 6.23102C17.687 6.64102 18.51 7.28102 19.124 8.19102C18.864 8.35102 18.624 8.53702 18.399 8.74102C17.912 9.17102 17.499 9.68102 17.169 10.246C16.739 11.016 16.519 11.886 16.525 12.766C16.54 13.849 16.815 14.801 17.365 15.626C17.752 16.226 18.269 16.74 18.899 17.162C19.209 17.372 19.481 17.517 19.739 17.612C19.619 17.987 19.487 18.352 19.334 18.712C18.987 19.519 18.574 20.292 18.084 21.022C17.652 21.652 17.312 22.122 17.054 22.432C16.652 22.912 16.264 23.272 15.874 23.529C15.444 23.814 14.939 23.965 14.422 23.965C14.072 23.98 13.722 23.935 13.388 23.838C13.098 23.743 12.812 23.636 12.532 23.515C12.239 23.381 11.936 23.267 11.627 23.175C11.247 23.075 10.857 23.027 10.463 23.028C10.063 23.028 9.67299 23.078 9.30299 23.173C8.99299 23.261 8.69299 23.369 8.39599 23.498C7.97599 23.673 7.70099 23.788 7.54099 23.838C7.21699 23.934 6.88499 23.992 6.55099 24.013C6.03099 24.013 5.54699 23.863 5.06499 23.563L5.07799 23.55ZM11.932 5.09002C11.252 5.43002 10.606 5.57402 9.95899 5.52602C9.85899 4.88002 9.95899 4.21602 10.229 3.48902C10.469 2.86902 10.789 2.30902 11.229 1.80902C11.689 1.28902 12.239 0.859023 12.859 0.549023C13.519 0.209023 14.149 0.0290234 14.749 -0.000976562C14.829 0.679023 14.749 1.34902 14.499 2.06902C14.271 2.70902 13.931 3.29902 13.499 3.82902C13.064 4.34902 12.524 4.77902 11.913 5.08902L11.932 5.09002Z"
+										fill="white"
+									/>
+								</svg>
+								<p class="resource__text">iTunes</p>
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="gallery">
-				<img class="gallery__item club-photo" src="img/gallery_club.webp" alt="" />
-				<img class="gallery__item car-photo-1" src="img/gallery_car.webp" alt="" />
-				<img class="gallery__item car-photo-2" src="img/gallery_car-2.webp" alt="" />
-				<img class="gallery__item photo-dj" src="img/gallery_dj's.webp" alt="" />
-				<img class="gallery__item img-handsup" src="img/gallert_hands-up.webp" alt="" />
+				<img class="gallery__item gallery__item_club" src="img/gallery_club.webp" alt="gallery photo" />
+				<img class="gallery__item gallery__item_car" src="img/gallery_car.webp" alt="gallery photo" />
+				<img class="gallery__item gallery__item_car-back" src="img/gallery_car-2.webp" alt="gallery photo" />
+				<img class="gallery__item gallery__item_dj" src="img/gallery_dj's.webp" alt="gallery photo" />
+				<img class="gallery__item gallery__item_hands" src="img/gallert_hands-up.webp" alt="gallery photo" />
 			</section>
 			<section class="events">
-                
 				<div class="event">
-					<img class="event__photo" src="img/events_lazor.webp" alt="" />
+					<img class="event__photo" src="img/events_lazor.webp" alt="lazor" />
 					<div class="event__info">
 						<p class="event__place">Chandler, AZ</p>
 						<p class="event__location">The Park at Wild Horse Pass</p>
@@ -173,7 +182,7 @@
 					<button class="event__ticket">TICKETS</button>
 				</div>
 				<div class="event">
-					<img class="event__photo" src="img/events_club.webp" alt="" />
+					<img class="event__photo" src="img/events_club.webp" alt="party" />
 					<div class="event__info">
 						<p class="event__place">Ibiza, IBZ</p>
 						<p class="event__location">Swag Ibiza Club</p>
@@ -182,7 +191,7 @@
 					<button class="event__ticket">TICKETS</button>
 				</div>
 				<div class="event">
-					<img class="event__photo" src="img/events_club-2.webp" alt="" />
+					<img class="event__photo" src="img/events_club-2.webp" alt="club" />
 					<div class="event__info">
 						<p class="event__place">Ibiza, IBZ</p>
 						<p class="event__location">El Swing Ibiza</p>
@@ -190,8 +199,8 @@
 					</div>
 					<button class="event__ticket">TICKETS</button>
 				</div>
-                <div class="event">
-					<img class="event__photo" src="img/events_lazor.webp" alt="" />
+				<div class="event">
+					<img class="event__photo" src="img/events_lazor.webp" alt="lazor" />
 					<div class="event__info">
 						<p class="event__place">Chandler, AZ</p>
 						<p class="event__location">The Park at Wild Horse Pass</p>
@@ -200,7 +209,7 @@
 					<button class="event__ticket">TICKETS</button>
 				</div>
 				<div class="event">
-					<img class="event__photo" src="img/events_club.webp" alt="" />
+					<img class="event__photo" src="img/events_club.webp" alt="party" />
 					<div class="event__info">
 						<p class="event__place">Ibiza, IBZ</p>
 						<p class="event__location">Swag Ibiza Club</p>
@@ -209,7 +218,7 @@
 					<button class="event__ticket">TICKETS</button>
 				</div>
 				<div class="event">
-					<img class="event__photo" src="img/events_club-2.webp" alt="" />
+					<img class="event__photo" src="img/events_club-2.webp" alt="club" />
 					<div class="event__info">
 						<p class="event__place">Ibiza, IBZ</p>
 						<p class="event__location">El Swing Ibiza</p>
@@ -217,35 +226,44 @@
 					</div>
 					<button class="event__ticket">TICKETS</button>
 				</div>
-               
 			</section>
-            <!-- <button class="prev">&#8592</button> -->
-            <!-- <button class="next">&#8594</button> -->
 		</main>
 		<footer class="footer">
-			<img class="footer__logo logo" src="img/logo.png" alt="" />
+			<img class="footer__logo" src="img/logo.png" alt="logo" />
 			<div class="footer__creditials">
-				<div class="creditials__column1">
-					<p class="column1__manager">artist management:</p>
-					<p class="column1__email">email:</p>
+				<div class="creditials__column creditials__column_bold">
+					<p>artist management:</p>
+					<p>email:</p>
 				</div>
-				<div class="creditials__column2">
-					<p class="column2__manager-name">jake henney</p>
-					<p class="column2__manager-email">jake@brightlightsofficial.com</p>
+				<div class="creditials__column creditials__column_align-left">
+					<p>jake henney</p>
+					<p>jake@brightlightsofficial.com</p>
 				</div>
 			</div>
 			<div class="footer__links">
-				<a class="links__logo" href="https://www.apple.com/itunes/"><img src="img/footer_apple-logo.png" alt="" /></a>
-				<a class="links__logo" href="https://www.spotify.com"><img src="img/footer_spotify-logo.png" alt="" /></a>
-				<a class="links__logo" href="https://www.instagram.com/"><img src="img/footer_instagram-logo.png" alt="" /></a>
-				<a class="links__logo" href="https://www.youtube.com/"><img src="img/footer_youtube-logo.png" alt="" /></a>
-				<a class="links__logo" href="https://www.twitter.com/"><img src="img/footer_twitter-logo.png" alt="" /></a>
-				<a class="links__logo" href="https://www.facebook.com/"><img src="img/footer_facebook-logo.png" alt="" /></a>
+				<a class="links__logo" href="https://www.apple.com/itunes/">
+					<img src="img/footer_apple-logo.png" alt="itunes" />
+				</a>
+				<a class="links__logo" href="https://www.spotify.com">
+					<img src="img/footer_spotify-logo.png" alt="spotify" />
+				</a>
+				<a class="links__logo" href="https://www.instagram.com/">
+					<img src="img/footer_instagram-logo.png" alt="instagram" />
+				</a>
+				<a class="links__logo" href="https://www.youtube.com/">
+					<img src="img/footer_youtube-logo.png" alt="youtube" />
+				</a>
+				<a class="links__logo" href="https://www.twitter.com/">
+					<img src="img/footer_twitter-logo.png" alt="twitter" />
+				</a>
+				<a class="links__logo" href="https://www.facebook.com/">
+					<img src="img/footer_facebook-logo.png" alt="facebook" />
+				</a>
 			</div>
 			<p class="footer__copyright">Copyright &copy; Вильсон Хечикянц 2023</p>
 		</footer>
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-				<script src=" https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
-        <script src="./main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script src=" https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+		<script src="./main.js"></script>
 	</body>
 </html>
